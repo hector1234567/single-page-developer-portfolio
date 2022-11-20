@@ -1,0 +1,26 @@
+{
+  "name": "single-page-developer-portfolio",
+  "version": "1.0.0",
+  "description": "![Design preview for the Single-page developer portfolio coding challenge](./preview.jpg)",
+  "default": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hector1234567/single-page-developer-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hector1234567/single-page-developer-portfolio/issues"
+  },
+  "homepage": "https://github.com/hector1234567/single-page-developer-portfolio#readme",
+  "dependencies": {
+    "parcel": "^2.8.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0"
+  }
+}

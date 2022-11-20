@@ -1,0 +1,31 @@
+:root {
+    --color-black: #151515;
+    --color-dark-grey: #242424;
+    --color-light-grey: #d9d9d9;
+    --color-green: #4EE1A0;
+    --color-white: #FFFFFF;
+}
+
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url(../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: SpaceGrotesk, sans-serif;
+    background-color: var(--color-black);
+    color: var(--color-light-grey);
+    font-size: 1.8rem;
+}
