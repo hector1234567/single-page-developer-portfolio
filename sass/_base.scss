@@ -27,5 +27,11 @@ body {
     font-family: SpaceGrotesk, sans-serif;
     background-color: var(--color-black);
     color: var(--color-light-grey);
-    font-size: 1.8rem;
+    font-size: 1.8rem;//styleName: Body;
+    font-weight: 500;
+    line-height: 2.8rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

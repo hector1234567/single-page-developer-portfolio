@@ -1,4 +1,32 @@
 nav {
+    width: 111rem;
     display: flex;
     margin: 3.9rem 16.5rem;
+}
+
+header {
+    width: 111rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 16.5rem;
+    position: relative;
+    height: 61rem;
+
+    img {
+        width: 44.5rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    h1 {
+        margin-bottom: 4.3rem;
+    }
+
+    p {
+        width: 44.5rem;
+        margin-bottom: 6.6rem;
+    }
 }
