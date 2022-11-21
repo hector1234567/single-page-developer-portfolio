@@ -13,12 +13,27 @@ header {
     position: relative;
     height: 61rem;
 
-    img {
+    .main__image img {
         width: 44.5rem;
         position: absolute;
         bottom: 0;
         right: 0;
         z-index: -1;
+    }
+
+    .pattern {
+        position: absolute;
+
+        &__rings {
+            top: 3.2rem;
+            left: 0;
+            transform: translateX(-50%);
+        }
+
+        &__circle {
+            bottom: 7rem;
+            right: 38rem;
+        }
     }
 
     h1 {
