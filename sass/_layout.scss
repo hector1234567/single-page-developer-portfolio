@@ -48,8 +48,11 @@ header {
 }
 
 hr {
+    height: .1rem;
     width: 111rem;
     margin-bottom: 10.4rem;
+    border: none;
+    border-bottom: 0.1rem solid var(--color-white);
 }
 
 .experience {
