@@ -1,7 +1,15 @@
 .project {
     img {
         max-width: 54rem;
-        height: 40rem;
+        height: auto;
+
+        @media (max-width: 849px) { // Tablet
+            max-width: 34.2rem;
+        }
+    
+        @media (max-width: 433px) { // Mobile
+            max-width: 34.5rem;
+        }
     }
 
     ul {
