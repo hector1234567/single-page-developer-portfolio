@@ -1,15 +1,33 @@
 .project {
+    position: relative;
+
     img {
-        max-width: 54rem;
+        width: 54rem;
         height: auto;
+        //filter: blur(.7rem);
+
+        -webkit-transition: .2s -webkit-filter ease;
+        -moz-transition: .2s -moz-filter ease;
+        -moz-transition: .2s filter ease;
+        -ms-transition: .2s -ms-filter ease;
+        -o-transition: .2s -o-filter ease;
+        transition: .2s filter ease, .2s -webkit-filter ease;
 
         @media (max-width: 849px) { // Tablet
-            max-width: 34.2rem;
+            width: 34.2rem;
         }
     
         @media (max-width: 433px) { // Mobile
-            max-width: 34.5rem;
+            width: 34.5rem;
         }
+    }
+
+    &:hover img {
+        filter: brightness(0.3);
+    }
+
+    h3 {
+        text-transform: uppercase;
     }
 
     ul {
@@ -19,6 +37,27 @@
 
         li{
             margin-right: 1.8rem;
+            text-transform: uppercase;
         }
+    }
+
+    &__links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 54rem;
+        height: 48rem;
+        display: none;
+
+        a {
+            margin-bottom: 4.8rem;
+        }
+    }
+
+    &:hover .project__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }

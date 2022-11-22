@@ -4,10 +4,37 @@
     margin-left: auto;
 
     &__element {
-        margin-right: 3.2rem;
+        margin-right: 2rem;
 
-        :hover {
-            fill: var(--color-green);
+        a {
+            height: 3.4rem;
+            width: 3.6rem;
+            display: inline-block;
+            background-color: var(--color-white);
+
+            &:hover {
+                background-color: var(--color-green);
+            }
+        }
+
+        &--1 a{
+            -webkit-mask: url(../assets/images/icon-github.svg) no-repeat center;
+            mask: url(../assets/images/icon-github.svg) no-repeat center;
+        }
+
+        &--2 a{
+            -webkit-mask: url(../assets/images/icon-frontend-mentor.svg) no-repeat center;
+            mask: url(../assets/images/icon-frontend-mentor.svg) no-repeat center;
+        }
+
+        &--3 a{
+            -webkit-mask: url(../assets/images/icon-linkedin.svg) no-repeat center;
+            mask: url(../assets/images/icon-linkedin.svg) no-repeat center;
+        }
+
+        &--4 a{
+            -webkit-mask: url(../assets/images/icon-twitter.svg) no-repeat center;
+            mask: url(../assets/images/icon-twitter.svg) no-repeat center;
         }
     }
 }
