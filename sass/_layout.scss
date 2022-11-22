@@ -74,3 +74,106 @@ hr {
         bottom: -5rem;
     }
 }
+
+.projects {
+    width: 111rem;
+    margin-bottom: 13.9rem;
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8rem;
+    }
+
+    &__list {
+        width: 111rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        row-gap: 6.9rem;
+    }
+}
+
+.contact {
+    background-color: var(--color-dark-grey);
+    width: 100%;
+    display: flex;
+
+    &__container {
+        width: 111rem;
+        margin: 8.4rem auto;
+        display: flex;
+        justify-content: space-between;
+
+        position: relative;
+
+        .pattern {
+            position: absolute;
+            left: -38rem;
+            bottom: -6rem;
+        }
+    }
+
+    &__heading {
+        max-width: 44.5rem;
+        h1 {
+            margin-bottom: 3.6rem;
+        }
+    }
+
+    &__form {
+        width: 44.5rem;
+        display: flex;
+        flex-direction: column;
+
+        input[name], textarea {
+            background-color: var(--color-dark-grey);
+            color: inherit;
+            font-size: inherit;
+            font-family: inherit;
+            border: none;
+            margin-bottom: 3.2rem;
+            border-bottom: .1rem solid var(--color-white);
+            padding: 0 2.4rem 1.7rem 2.4rem;
+
+            &:focus-visible {
+                outline: none;
+            }
+        }
+
+        input[name] {
+            height: 4.3rem;
+        }
+
+        input[type="submit"] {
+            background-color: var(--color-dark-grey);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-left: auto;
+        }
+
+        textarea {
+            resize: none;
+        }
+    }
+}
+
+footer {
+    background-color: var(--color-dark-grey);
+    width: 100%;
+    display: flex;
+
+    .footer-container {
+        width: 111rem;
+        margin: 0 auto;
+        display: flex;
+        border-top: .1rem solid var(--color-white);
+        padding: 4.7rem 0 9.2rem 0;
+
+        ul {
+            margin-right: -3.2rem;
+        }
+    }
+}

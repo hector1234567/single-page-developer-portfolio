@@ -1,0 +1,16 @@
+.project {
+    img {
+        max-width: 54rem;
+        height: 40rem;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        padding: .7rem 0;
+
+        li{
+            margin-right: 1.8rem;
+        }
+    }
+}

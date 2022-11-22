@@ -60,31 +60,47 @@
     </div>
     <img class="pattern pattern__rings" src="assets/images/pattern-rings.svg" alt>
   </section>
-  <section>
-    <div>
-      <h1>Projects</h1>
-      <a href="#">Contact me</a>
+  <section class="projects">
+    <div class="projects__heading">
+      <h1 class="heading-xlarge">Projects</h1>
+      <a class="link" href="#">Contact me</a>
     </div>
-    <div>
-      <div>
+    <div class="projects__list">
+      <div class="project">
         <img src="assets/images/thumbnail-project-1-large.webp" alt="Design Portfolio">
-        <h3>Design portfolio</h3>
+        <h3 class="heading-large">Design portfolio</h3>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
         </ul>
       </div>
-      <div>
+      <div class="project">
         <img src="assets/images/thumbnail-project-1-large.webp" alt="Design Portfolio">
-        <h3>Design portfolio</h3>
+        <h3 class="heading-large">Design portfolio</h3>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
         </ul>
       </div>
-      <div>
+      <div class="project">
         <img src="assets/images/thumbnail-project-1-large.webp" alt="Design Portfolio">
-        <h3>Design portfolio</h3>
+        <h3 class="heading-large">Design portfolio</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+      <div class="project">
+        <img src="assets/images/thumbnail-project-1-large.webp" alt="Design Portfolio">
+        <h3 class="heading-large">Design portfolio</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+      <div class="project">
+        <img src="assets/images/thumbnail-project-1-large.webp" alt="Design Portfolio">
+        <h3 class="heading-large">Design portfolio</h3>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
@@ -92,27 +108,32 @@
       </div>
     </div>
   </section>
-  <section>
-    <div>
-      <h1>Contact</h1>
-    </div>
-    <div>
-      <form action="">
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Email">
-        <textarea name="Message" cols="30" rows="10" placeholder="Message"></textarea>
-        <input type="submit" value="Send Message">
+  <section class="contact">
+    <div class="contact__container">
+      <div class="contact__heading">
+        <h1 class="heading-xlarge">Contact</h1>
+        <p>I would love to hear about your project and how I could help. Please 
+          fill in the form, and I’ll get back to you as soon as possible.</p>
+      </div>
+      <form class="contact__form" action="">
+        <input type="text" placeholder="NAME" id="name" name="name">
+        <input type="text" placeholder="EMAIL" id="email" name="email">
+        <textarea placeholder="MESSAGE" id="message" name="message" cols="30" rows="3"></textarea>
+        <input type="submit" class="link" value="Send Message">
       </form>
+      <img class="pattern pattern__rings" src="assets/images/pattern-rings.svg" alt>
     </div>
   </section>
   <footer>
-    <span>adamkeyes</span>
-    <ul>
-      <li><img src="assets/images/icon-github.svg" alt="GitHub"></li>
-      <li><img src="assets/images/icon-frontend-mentor.svg" alt="Frontend Mentor"></li>
-      <li><img src="assets/images/icon-linkedin.svg" alt="LinkedIn"></li>
-      <li><img src="assets/images/icon-twitter.svg" alt="Twitter"></li>
-    </ul>
+    <div class="footer-container">
+      <span class="heading-medium">adamkeyes</span>
+      <ul class="links-icons">
+        <li class="links-icons__element"><a href="#"><img src="assets/images/icon-github.svg" alt="GitHub"></a></li>
+        <li class="links-icons__element"><a href="#"><img src="assets/images/icon-frontend-mentor.svg" alt="Frontend Mentor"></a></li>
+        <li class="links-icons__element"><a href="#"><img src="assets/images/icon-linkedin.svg" alt="LinkedIn"></a></li>
+        <li class="links-icons__element"><a href="#"><img src="assets/images/icon-twitter.svg" alt="Twitter"></a></li>
+      </ul>
+    </div>
   </footer>
 <!-- 
   adamkeyes
