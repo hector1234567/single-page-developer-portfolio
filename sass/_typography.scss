@@ -31,6 +31,12 @@
     font-weight: 700;
     line-height: 5.6rem;
     letter-spacing: -.15rem;
+    
+    @media (max-width: 433px) { // Mobile
+        font-size: 3.2rem;
+        line-height: 4rem;
+        letter-spacing: -.1rem;
+    }
 }
 
 .heading-medium {

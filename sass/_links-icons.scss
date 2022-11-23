@@ -3,8 +3,19 @@
     display: flex;
     margin-left: auto;
 
+    @media (max-width: 433px) { // Mobile
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
     &__element {
         margin-right: 2rem;
+
+        @media (max-width: 433px) { // Mobile
+            &:last-child {
+                margin-right: 0;
+            }
+        }
 
         a {
             height: 3.4rem;
