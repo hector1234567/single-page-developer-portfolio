@@ -84,17 +84,23 @@ header {
             }
     
             @media (max-width: 433px) { // Mobile
-                bottom: 29.4rem;
-                right: -6rem;
+                bottom: 25.4rem;
+                left: 22rem;
             }
         }
     }
 
     h1 {
         margin-bottom: 4.3rem;
+        width: 71rem;
+        
+        @media (max-width: 849px) { // Tablet
+            width: 57rem;
+        }
     
         @media (max-width: 433px) { // Mobile
             margin-bottom: 2.4rem;
+            width: auto;
         }
     }
 
@@ -121,7 +127,7 @@ hr {
     }
     
     @media (max-width: 433px) { // Mobile
-        width: 100vw;
+        width: 95vw;
         margin-bottom: 4rem;
     }
 }
@@ -146,7 +152,7 @@ hr {
         }
     
         @media (max-width: 433px) { // Mobile
-            width: 100vw;
+            width: 95vw;
             grid-template-columns: repeat(1, 1fr);
             row-gap: 2.4rem;
             text-align: center;
@@ -211,7 +217,7 @@ hr {
         }
     
         @media (max-width: 433px) { // Mobile
-            width: 100vw;
+            width: 95vw;
             grid-template-columns: repeat(1, 1fr);
         }
     }

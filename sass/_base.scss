@@ -53,6 +53,14 @@ html {
     @media (max-width: 433px) { // Mobile
         font-size: 62.5%;
     }
+    
+    @media (max-width: 371px) { 
+        font-size: 55%;
+    }
+    
+    @media (max-width: 338px) { 
+        font-size: 45%;
+    }
 }
 
 body {

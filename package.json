@@ -2,7 +2,7 @@
   "name": "single-page-developer-portfolio",
   "version": "1.0.0",
   "description": "![Design preview for the Single-page developer portfolio coding challenge](./preview.jpg)",
-  "default": "index.js",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist"
