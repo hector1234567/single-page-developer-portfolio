@@ -2,6 +2,7 @@ nav {
     width: 111rem;
     display: flex;
     margin: 3rem 16.5rem;
+    z-index: 999;
 
     @media (max-width: 849px) { // Tablet
         width: 70.8rem;
@@ -252,10 +253,10 @@ hr {
 
     &__heading {
         max-width: 44.5rem;
-        text-align: center;
 
         @media (max-width: 849px) { // Tablet
             margin-bottom: 4.8rem;
+            text-align: center;
         }
 
         h1 {
