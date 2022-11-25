@@ -1,5 +1,35 @@
 [
     {
-        "title": "Prueba"
+        "name": "Design portfolio",
+        "src": "thumbnail-project-2",
+        "imgFormat": "webp",
+        "tools": [
+            "HTML",
+            "CSS"
+        ],
+        "url": "",
+        "gitHub": ""
+    },
+    {
+        "name": "Design portfolio",
+        "src": "thumbnail-project-2",
+        "imgFormat": "webp",
+        "tools": [
+            "HTML",
+            "CSS"
+        ],
+        "url": "",
+        "gitHub": ""
+    },
+    {
+        "name": "Design portfolio",
+        "src": "thumbnail-project-2",
+        "imgFormat": "webp",
+        "tools": [
+            "HTML",
+            "CSS"
+        ],
+        "url": "",
+        "gitHub": ""
     }
 ]

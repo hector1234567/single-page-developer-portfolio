@@ -62,7 +62,22 @@ const loadProjects = async () => {
     try {
         const response = await fetch('data.json');
         const projects = await response.json();
-        console.log(projects)
+        projects.forEach(project => {
+            const html = `
+            <div class="project">
+                <img class="blurImage" src="${project.src}-pixel.${project.imgFormat}" 
+                    data-srclarge="${project.src}-large.${project.imgFormat}"
+                    alt="${project.name}">
+                <h3 class="heading-medium">${project.name}</h3>
+                <ul>${project.tools.map(tool => `<li>${tool}</li>`).join('')}</ul>
+                <div class="project__links">
+                    <a class="link" href="${project.url}">VIEW PROJECT</a>
+                    <a class="link" href="${project.gitHub}">VIEW CODE</a>
+                </div>
+            </div>`;
+
+            projectsList.insertAdjacentHTML('beforeend', html);
+        })
     } catch(e) {
         console.log(e)
     }
