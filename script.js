@@ -2,7 +2,6 @@
 
 const contactLinks = document.querySelectorAll('.contact-link');
 const sectionContact = document.querySelector('section.contact');
-const projectImages = document.querySelectorAll('.project img');
 
 contactLinks.forEach(link => {
     link.addEventListener('click', function(ev) {
@@ -77,8 +76,9 @@ const loadProjects = async () => {
 
             projectsList.insertAdjacentHTML('beforeend', html);
         });
-                
-        projectImages.forEach(image => imgObserver.observe(image));
+
+        document.querySelectorAll('.project img')
+            .forEach(image => imgObserver.observe(image));
     } catch(e) {
         console.log(e)
     }
