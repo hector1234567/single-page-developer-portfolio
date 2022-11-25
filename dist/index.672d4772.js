@@ -12,6 +12,7 @@ contactLinks.forEach((link)=>{
 });
 // LAZY LOADING IMAGES
 const loadImg = function(entries, observer) {
+    console.log("Hola");
     entries.forEach((entry)=>{
         if (!entry.isIntersecting) return;
         entry.target.src = entry.target.dataset.srclarge;
@@ -24,7 +25,7 @@ const loadImg = function(entries, observer) {
 const imgObserver = new IntersectionObserver(loadImg, {
     root: null,
     threshold: 0,
-    rootMargin: "-200px"
+    rootMargin: "-40px"
 });
 projectImages.forEach((image)=>imgObserver.observe(image));
 // CONTACT FORM
