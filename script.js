@@ -34,7 +34,6 @@ const imgObserver = new IntersectionObserver(loadImg, {
     rootMargin: '-40px',
 });
 
-projectImages.forEach(image => imgObserver.observe(image));
 
 // CONTACT FORM
 
@@ -77,7 +76,9 @@ const loadProjects = async () => {
             </div>`;
 
             projectsList.insertAdjacentHTML('beforeend', html);
-        })
+        });
+                
+        projectImages.forEach(image => imgObserver.observe(image));
     } catch(e) {
         console.log(e)
     }
