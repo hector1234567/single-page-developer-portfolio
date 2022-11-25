@@ -273,7 +273,21 @@ hr {
             width: 95vw;
         }
 
+        input[type="submit"] {
+            background-color: var(--color-dark-grey);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-left: auto;
+            font-family: inherit;
+        }
+    }
+
+    &__field {
+        position: relative;
+
         input[name], textarea {
+            width: 100%;
             background-color: var(--color-dark-grey);
             color: inherit;
             font-size: inherit;
@@ -290,22 +304,60 @@ hr {
             &::placeholder {
                 font-family: inherit;
             }
+
+            &:focus {
+                border-bottom: .1rem solid var(--color-green);
+
+                &:invalid {
+                    border-bottom: .1rem solid var(--color-red);
+                }
+            }
         }
 
         input[name] {
             height: 4.3rem;
-        }
 
-        input[type="submit"] {
-            background-color: var(--color-dark-grey);
-            border-top: none;
-            border-left: none;
-            border-right: none;
-            margin-left: auto;
+            &.invalid {
+                border-bottom: .1rem solid var(--color-red) !important;
+            }
+
+            &.invalid ~ .error-message {
+                display: block !important;
+            }
+
+            &.invalid ~ .exclamation {
+                display: flex !important;
+            }
         }
 
         textarea {
             resize: none;
+
+            &.invalid {
+                border-bottom: .1rem solid var(--color-red) !important;
+            }
+
+            &.invalid ~ .error-message {
+                display: block !important;
+            }
+
+            &.invalid ~ .exclamation {
+                display: flex !important;
+            }
+        }
+
+        .exclamation {
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: var(--color-red);
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            border: .2rem solid var(--color-red);
+            align-items: center;
+            justify-content: center;
+            display: none;
         }
     }
 }

@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="sass/main.scss">
+  <script defer src="script.js"></script>
   
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
@@ -23,7 +24,7 @@
     <h1 class="heading-xlarge">Nice to meet you! I'm <span class="underline">Adam Keyes</span>.</h1>
     <p>Based in the UK, I'm a front-end developer passionate about 
       building accessible web apps that users love.</p>
-    <a class="link" href="#">Contact me</a>
+    <a class="link contact-link" href="#">Contact me</a>
     <picture class="main__image">
       <source media="(max-width: 433px)" srcset="assets/images/image-profile-mobile.webp">
       <source media="(max-width: 849px)" srcset="assets/images/image-profile-tablet.webp">
@@ -65,13 +66,13 @@
   <section class="projects">
     <div class="projects__heading">
       <h1 class="heading-xlarge">Projects</h1>
-      <a class="link" href="#">Contact me</a>
+      <a class="link contact-link" href="#">Contact me</a>
     </div>
     <div class="projects__list">
       <div class="project">
-        <img src="assets/images/thumbnail-project-1-pixel.webp" 
-        data-src-large="assets/images/thumbnail-project-1-large.webp"
-        data-src-small="assets/images/thumbnail-project-1-small.webp" 
+        <img class="blurImage" src="assets/images/thumbnail-project-1-pixel.webp" 
+        data-srclarge="/thumbnail-project-1-large.webp"
+        data-srcsmall="assets/images/thumbnail-project-1-small.webp" 
         alt="Design Portfolio">
         <h3 class="heading-medium">Design portfolio</h3>
         <ul>
@@ -84,9 +85,9 @@
         </div>
       </div>
       <div class="project">
-        <img src="assets/images/thumbnail-project-2-pixel.webp" 
-        data-src-large="assets/images/thumbnail-project-2-large.webp"
-        data-src-small="assets/images/thumbnail-project-2-small.webp" 
+        <img class="blurImage" src="assets/images/thumbnail-project-2-pixel.webp" 
+        data-srclarge="/thumbnail-project-2-large.webp"
+        data-srcsmall="assets/images/thumbnail-project-2-small.webp" 
         alt="Design Portfolio">
         <h3 class="heading-medium">E-LEARNING LANDING PAGE</h3>
         <ul>
@@ -99,9 +100,9 @@
         </div>
       </div>
       <div class="project">
-        <img src="assets/images/thumbnail-project-3-pixel.webp" 
-        data-src-large="assets/images/thumbnail-project-3-large.webp"
-        data-src-small="assets/images/thumbnail-project-3-small.webp" 
+        <img class="blurImage" src="assets/images/thumbnail-project-3-pixel.webp" 
+        data-srclarge="/thumbnail-project-3-large.webp"
+        data-srcsmall="assets/images/thumbnail-project-3-small.webp" 
         alt="Design Portfolio">
         <h3 class="heading-medium">TODO WEB APP</h3>
         <ul>
@@ -115,9 +116,9 @@
         </div>
       </div>
       <div class="project">
-        <img src="assets/images/thumbnail-project-4-pixel.webp" 
-        data-src-large="assets/images/thumbnail-project-4-large.webp"
-        data-src-small="assets/images/thumbnail-project-4-small.webp" 
+        <img class="blurImage" src="assets/images/thumbnail-project-4-pixel.webp" 
+        data-srclarge="/thumbnail-project-4-large.webp"
+        data-srcsmall="assets/images/thumbnail-project-4-small.webp" 
         alt="Design Portfolio">
         <h3 class="heading-medium">ENTERTAINMENT WEB APP</h3>
         <ul>
@@ -131,9 +132,9 @@
         </div>
       </div>
       <div class="project">
-        <img src="assets/images/thumbnail-project-5-pixel.webp" 
-        data-src-large="assets/images/thumbnail-project-5-large.webp"
-        data-src-small="assets/images/thumbnail-project-5-small.webp" 
+        <img class="blurImage" src="assets/images/thumbnail-project-5-pixel.webp" 
+        data-srclarge="/thumbnail-project-5-large.webp"
+        data-srcsmall="assets/images/thumbnail-project-5-small.webp" 
         alt="Design Portfolio">
         <h3 class="heading-medium">MEMORY GAME</h3>
         <ul>
@@ -147,9 +148,9 @@
         </div>
       </div>
       <div class="project">
-        <img src="assets/images/thumbnail-project-6-pixel.webp" 
-        data-src-large="assets/images/thumbnail-project-6-large.webp"
-        data-src-small="assets/images/thumbnail-project-6-small.webp" 
+        <img class="blurImage" src="assets/images/thumbnail-project-6-pixel.webp" 
+        data-srclarge="/thumbnail-project-6-large.webp"
+        data-srcsmall="assets/images/thumbnail-project-6-small.webp" 
         alt="Design Portfolio">
         <h3 class="heading-medium">ART GALLERY SHOWCASE</h3>
         <ul>
@@ -171,10 +172,26 @@
         <p>I would love to hear about your project and how I could help. Please 
           fill in the form, and I’ll get back to you as soon as possible.</p>
       </div>
-      <form class="contact__form" action="">
-        <input type="text" placeholder="NAME" id="name" name="name">
-        <input type="text" placeholder="EMAIL" id="email" name="email">
-        <textarea placeholder="MESSAGE" id="message" name="message" cols="30" rows="3"></textarea>
+      <form class="contact__form" 
+      action="mailto:hectorbg303@gmail.com"
+      method="POST"
+      enctype="text/plain"
+      name="ContactForm">
+        <div class="contact__field">
+          <input type="text" placeholder="NAME" id="name" name="name" required>
+          <div class="exclamation">!</div>
+          <div class="contact__error-message--email error-message">Sorry, invalid format here.</div>
+        </div>
+        <div class="contact__field">
+          <input type="email" placeholder="EMAIL" id="email" name="email" required>
+          <div class="exclamation">!</div>
+          <div class="contact__error-message--email error-message">Sorry, invalid format here.</div>
+        </div>
+        <div class="contact__field">
+          <textarea placeholder="MESSAGE" id="message" name="message" cols="30" rows="3" required></textarea>
+          <div class="exclamation">!</div>
+          <div class="contact__error-message--email error-message">Sorry, invalid format here.</div>
+        </div>
         <input type="submit" class="link" value="Send Message">
       </form>
       <img class="pattern pattern__rings" src="assets/images/pattern-rings.svg" alt>

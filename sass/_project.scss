@@ -8,7 +8,7 @@
     img {
         width: 54rem;
         height: auto;
-        //filter: blur(.7rem);
+        min-height: 37rem;
 
         -webkit-transition: .2s -webkit-filter ease;
         -moz-transition: .2s -moz-filter ease;
@@ -19,16 +19,18 @@
 
         @media (max-width: 849px) { // Tablet
             width: 34.2rem;
+            min-height: unset;
         }
     
         @media (max-width: 433px) { // Mobile
             width: 34.5rem;
+            min-height: unset;
         }
     }
 
     &:hover img {
         @media (min-width: 850px) { 
-            filter: brightness(0.3);
+            filter: brightness(0.1);
         }
     }
 
@@ -81,4 +83,8 @@
             justify-content: center;
         }
     }
+}
+
+.blurImage {
+    filter: blur(.7rem);
 }
