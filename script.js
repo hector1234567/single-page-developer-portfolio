@@ -53,3 +53,18 @@ inputs.forEach(input => {
         this.classList.remove('invalid');
     });
 });
+
+// Projects
+
+const projectsList = document.querySelector('.projects__list');
+
+const loadProjects = async () => {
+    try {
+        const response = await fetch('data.json');
+        const projects = await response.json();
+        console.log(projects)
+    } catch(e) {
+        console.log(e)
+    }
+}
+loadProjects();
